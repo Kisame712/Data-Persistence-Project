@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
 public class MainManager : MonoBehaviour
 {
     public Brick BrickPrefab;
@@ -70,6 +69,7 @@ public class MainManager : MonoBehaviour
 
     public void GameOver()
     {
+        MenuManager.Instance.SaveData();
         m_GameOver = true;
         GameOverText.SetActive(true);
     }
