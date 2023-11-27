@@ -20,4 +20,8 @@ public class MenuUIHandler : MonoBehaviour
         Application.Quit();
 #endif
     }
+    public void Back()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
