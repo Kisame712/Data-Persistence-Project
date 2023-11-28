@@ -498,6 +498,8 @@ MonoBehaviour:
   Ball: {fileID: 177912862}
   ScoreText: {fileID: 218624815}
   GameOverText: {fileID: 474497238}
+  CurrentPlayerName: {fileID: 0}
+  BestPlayerNameAndScore: {fileID: 1105088063}
 --- !u!224 &450625943
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1019,7 +1021,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 188.75}
+  m_AnchoredPosition: {x: -5, y: 188.75}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1105088063
@@ -1242,8 +1244,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2137539499}
-        m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
+      - m_Target: {fileID: 450625942}
+        m_TargetAssemblyTypeName: MainManager, Assembly-CSharp
         m_MethodName: Back
         m_Mode: 1
         m_Arguments:
@@ -1763,3 +1765,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269e41e49579b814d8db9c29b1fc6d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNameInput: {fileID: 0}
